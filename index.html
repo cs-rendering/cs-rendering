@@ -1,19 +1,96 @@
-<p>This website provides additional materials for the paper "Dynamic late reverberation rendering using the common-slope model" submitted to the 6th International Conference on Audio for Games.</p>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>The following video demonstrates rendering with the proposed system based on the common-slope model. The rendering in the video only includes the late reverberation synthesized with the modal reverberators.</p>
-<p>
-  <video width="1120" height="630" controls>
-    <source src="demo_video_mono.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-</p>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-<p>In this video, the rendering includes direct sound and early reflections from the simulations (first 50 ms of the RIR). The late reverberation is still synthesized with the modal reverberators (RIR after 50 ms).</p>
-<p>
-  <video width="1120" height="630" controls>
-    <source src="demo_video_mono_with_direct.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-</p>
+	<title>Dynamic late reverberation rendering using the common-slope model</title>
 
-<p>A binaural demo video of the proposed system will follow soon.</p>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="layout.css" type="text/css" />
+
+	<meta charset="utf-8" />
+
+</head>
+
+<body>
+  <header>
+      <h1>Dynamic late reverberation rendering using the common-slope model</h1>
+      <p>This website provides additional materials for the paper "Dynamic late reverberation rendering using the common-slope model" accepted for publication in the 6th International Conference on Audio for Games.</p>
+  </header>
+  
+  <section>
+
+      <!-- First Row -->
+      <div class="row">
+          <h2>Mono demo</h2>
+          <div class="row-container">
+              <div class="column">
+                  <h3>Only late reverberation</h3>
+                  <p>The following video demonstrates rendering with the proposed system based on the common-slope model. The rendering in the video only includes the late reverberation synthesized with the modal reverberators.</p>
+                  <video controls>
+                      <source src="demo_video_mono.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+
+              <div class="column">
+                  <h3>Common-slope rendering with first 50 ms from true RIR</h3>
+                  <p>In this video, the rendering includes direct sound and early reflections from the simulations (first 50 ms of the RIR). The late reverberation is still synthesized with the modal reverberators (RIR after 50 ms).</p>
+                  <video controls>
+                      <source src="demo_video_mono_with_direct.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+
+              <div class="column">
+                  <h3>True RIR</h3>
+                  <p>This video demonstrates rendering using the true RIRs simulated with Treble.</p>
+                  <video controls>
+                      <source src="demo_video_mono_true.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+          </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="row">
+          <h2>Binaural demo</h2>
+          <div class="row-container">
+            <div class="column">
+              <h3>Only late reverberation</h3>
+              <p>The following video demonstrates rendering with the proposed system based on the common-slope model. The rendering in the video only includes the late reverberation synthesized with the modal reverberators.</p>
+              <video controls>
+                  <source src="demo_video_bin.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+            </div>  
+
+            <div class="column">
+                <h3>Common-slope rendering with first 50 ms from true RIR</h3>
+                <p>In this video, the rendering includes direct sound and early reflections from the simulations (first 50 ms of the RIR). The late reverberation is still synthesized with the modal reverberators (RIR after 50 ms).</p>
+                <video controls>
+                    <source src="demo_video_bin_with_direct.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="column">
+                <h3>True RIR</h3>
+                <p>This video demonstrates rendering using the true RIRs simulated with Treble.</p>
+                <video controls>
+                    <source src="demo_video_bin_true.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+          </div>
+      </div>
+
+  </section>
+</body>
+
+</html>
+
+
